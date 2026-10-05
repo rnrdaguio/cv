@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV hub for Reina Nette Ruiz Daguio — Civil Engineer and HKUST PhD Candidate in advanced cementitious materials, experimental mechanics, and micromechanics.">
+  <meta name="theme-color" content="#0f2742">
+  <title>Reina Daguio | CV Hub</title>
+  <style>
+    :root {
+      --ink:#17202a; --muted:#5c6670; --navy:#0f2742; --blue:#1f5f99;
+      --blue-soft:#eaf2f8; --line:#dfe5ea; --paper:#fff; --canvas:#f4f7f9;
+      --shadow:0 12px 34px rgba(15,39,66,.09); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink);
+      background:radial-gradient(circle at top right,rgba(31,95,153,.08),transparent 32rem),var(--canvas);
+      line-height:1.55;
+    }
+    .page{width:min(760px,calc(100% - 32px));margin:0 auto;padding:56px 0 48px}
+    .hero{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:var(--shadow)}
+    .eyebrow{margin:0 0 10px;color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h1{margin:0;color:var(--navy);font-size:clamp(2rem,7vw,3.15rem);line-height:1.03;letter-spacing:-.035em}
+    .role{margin:16px 0 0;font-size:1.05rem;font-weight:700;color:#253545}
+    .focus{margin:7px 0 0;color:var(--muted);font-size:.98rem}
+    .intro{margin:24px 0 0;padding-top:22px;border-top:1px solid var(--line);color:#34414d;font-size:.98rem}
+    .section-title{margin:34px 4px 12px;color:var(--navy);font-size:1.15rem;letter-spacing:-.01em}
+    .section-note{margin:-5px 4px 16px;color:var(--muted);font-size:.91rem}
+    .top-actions{display:grid;gap:12px;margin-top:24px}
+    .linkedin-cta{
+      display:block;text-decoration:none;text-align:center;background:var(--blue);color:#fff;
+      border:2px solid var(--blue);border-radius:14px;padding:15px 18px;font-weight:800;
+      font-size:1rem;box-shadow:0 8px 20px rgba(31,95,153,.16);
+      transition:transform 150ms ease,box-shadow 150ms ease,background 150ms ease;
+    }
+    .linkedin-cta:hover,.linkedin-cta:focus-visible{
+      transform:translateY(-2px);box-shadow:0 12px 26px rgba(31,95,153,.22);background:#184f81;outline:none
+    }
+    .secondary-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .secondary-action{
+      display:block;text-decoration:none;text-align:center;color:var(--navy);background:#fff;
+      border:1px solid var(--line);border-radius:12px;padding:11px 10px;font-weight:750;font-size:.88rem
+    }
+    .cards{display:grid;gap:14px}
+    .card{
+      display:block;text-decoration:none;color:inherit;background:var(--paper);border:1px solid var(--line);
+      border-radius:var(--radius);padding:21px 22px;box-shadow:0 7px 22px rgba(15,39,66,.05);
+      transition:transform 150ms ease,border-color 150ms ease,box-shadow 150ms ease;
+    }
+    .card:hover,.card:focus-visible{transform:translateY(-2px);border-color:#b9cde0;box-shadow:0 12px 26px rgba(15,39,66,.09);outline:none}
+    .card.primary{border:2px solid var(--blue);background:linear-gradient(180deg,#fff,#fbfdff)}
+    .tag{display:inline-flex;margin-bottom:9px;padding:4px 9px;border-radius:999px;background:var(--blue-soft);color:var(--blue);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    .card h2{margin:0;color:var(--navy);font-size:1.08rem;line-height:1.3}
+    .card p{margin:7px 0 0;color:var(--muted);font-size:.91rem}
+    .action{display:inline-block;margin-top:13px;color:var(--blue);font-size:.9rem;font-weight:800}
+    .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .small-link{
+      display:block;text-decoration:none;text-align:center;color:var(--navy);background:var(--paper);
+      border:1px solid var(--line);border-radius:14px;padding:13px 12px;font-weight:750;font-size:.91rem;
+      transition:border-color 150ms ease,transform 150ms ease;
+    }
+    .small-link:hover,.small-link:focus-visible{border-color:#aac3d9;transform:translateY(-1px);outline:none}
+    footer{margin-top:32px;text-align:center;color:#75808b;font-size:.78rem}
+    @media (max-width:560px){
+      .page{width:min(100% - 22px,760px);padding-top:20px}
+      .hero{padding:27px 23px;border-radius:20px}
+      .links{grid-template-columns:1fr}
+      .secondary-actions{grid-template-columns:1fr}
+      .card{padding:19px}
+    }
+    @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="name">
+      <p class="eyebrow">Curriculum Vitae</p>
+      <h1 id="name">Reina Nette Ruiz Daguio</h1>
+      <p class="role">Licensed Civil Engineer · HKUST PhD Candidate</p>
+      <p class="focus">Advanced Cementitious Materials · Experimental Mechanics · Micromechanics</p>
+      <p class="intro">
+        I combine materials research, experimental testing, mechanics-based modeling, and prior
+        professional civil-engineering consulting.
+      </p>
+
+      <div class="top-actions" aria-label="Primary contact links">
+        <a class="linkedin-cta"
+           href="https://www.linkedin.com/in/reinadaguio"
+           target="_blank" rel="noopener noreferrer">Connect with me on LinkedIn →</a>
+        <div class="secondary-actions">
+          <a class="secondary-action" href="mailto:reinadaguio@gmail.com">Email</a>
+          <a class="secondary-action"
+             href="https://www.researchgate.net/profile/Reina-Nette-Daguio?ev=hdr_xprf"
+             target="_blank" rel="noopener noreferrer">ResearchGate</a>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">CVs</h2>
+    <p class="section-note">PDFs open in Google Drive, where they can be viewed or downloaded.</p>
+
+    <section class="cards" aria-label="CV options">
+      <a class="card primary" href="https://drive.google.com/file/d/1NqRGffqhM3vdNSv5tXNzajoQL8KYHquW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <span class="tag">Primary CV</span>
+        <h2>Materials R&amp;D / Applied Research</h2>
+        <p>Advanced cementitious materials, experimental mechanics, materials characterization, MATLAB micromechanics, and applied research.</p>
+        <span class="action">View / download PDF →</span>
+      </a>
+
+      <a class="card" href="https://drive.google.com/file/d/13mqzOLENuqC0dMc-92d6-iTw0lDoI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <h2>Concrete Durability &amp; Materials</h2>
+        <p>Concrete and cementitious-material behavior, testing and characterization, technical investigation, and engineering interpretation.</p>
+        <span class="action">View / download PDF →</span>
+      </a>
+
+      <a class="card" href="https://drive.google.com/file/d/1VZfBMMW3RCn1ecsrFoRvdzFXJn5O0iaw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <h2>Geotechnical &amp; Hydraulic Engineering</h2>
+        <p>Geotechnical assessment, slope stability, settlement, liquefaction, ground improvement, hydrologic/hydraulic modeling, flood and infrastructure consulting.</p>
+        <span class="action">View / download PDF →</span>
+      </a>
+    </section>
+
+
+    <footer><p>Reina Nette Ruiz Daguio · Hong Kong SAR</p></footer>
+  </main>
+</body>
+</html>
